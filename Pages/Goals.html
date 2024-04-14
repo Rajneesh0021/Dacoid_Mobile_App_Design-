@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Goals</title>
+    <link rel="stylesheet" href="./Css/common.css">
+    <style>
+        /* Your existing styles */
+        h2 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        
+
+        .input-group {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            width: 343px;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            background-color: rgba(241, 241, 241, 1);
+            border-radius: 12px;
+            box-sizing: border-box;
+        }
+
+        .input-group label {
+            flex: 1;
+        }
+
+        .input-group input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        
+
+       
+
+        .social-buttons button:hover {
+            background-color: #f3f3f3;
+        }
+
+        button[type="submit"] {width: 343px;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+           
+            border-radius: 12px;
+            box-sizing: border-box;
+            background: linear-gradient(270deg, #7B91FF 0%, #95BEFF 100%);
+            color: #ffffff;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>What are your goals?</h2>
+        <form action="#" method="POST">
+            <div class="input-group">
+                <label for="weight_loss">Weight Loss</label>
+                <input type="checkbox" id="weight_loss" name="weight_loss">
+            </div>
+            <div class="input-group">
+                <label for="Muscle_Gain">Muscle Gain</label>
+                <input type="checkbox" id="Muscle_Gain" name="Muscle_Gain">
+            </div>
+            <div class="input-group">
+                <label for="Flexibility_and_Mobility">Flexibility and Mobility</label>
+                <input type="checkbox" id="Flexibility_and_Mobility" name="Flexibility_and_Mobility">
+            </div>
+            <div class="input-group">
+                <label for="General_Fitness">General Fitness</label>
+                <input type="checkbox" id="General_Fitness" name="General_Fitness">
+            </div>
+            <div class="input-group">
+                <label for="specific_training">Event - specific training</label>
+                <input type="checkbox" id="specific_training" name="specific_training">
+            </div>
+            <div class="input-group">
+                <label for="Mindfulness_and_Mental_Health">Mindfulness and Mental Health</label>
+                <input type="checkbox" id="Mindfulness_and_Mental_Health" name="Mindfulness_and_Mental_Health">
+            </div>
+           
+            <button type="submit"><a href="./WorkoutTrack.html">Confirm</a></button>
+        </form>
+        
+    </div>
+</body>
+</html>

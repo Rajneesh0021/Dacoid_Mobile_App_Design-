@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="./Css/common.css">
+    <link rel="stylesheet" href="./Css/appdrawer.css">
+    <style>
+        .flex{
+            display: flex;
+            justify-content: space-between;
+        }
+        .warn{
+            padding: 10px;
+            gap: 10px;
+            background: linear-gradient(90.07deg, rgba(129, 157, 255, 0.28) 5.94%, rgba(16, 16, 16, 0) 76.45%);
+            border-radius: 12px;
+
+        }
+        .warn i{
+            position: relative;
+           justify-self:center;
+top: 11px;
+
+gap: 0px;
+border: 2px 0px 0px 0px;
+opacity: 0px;
+
+        }
+        .crd{
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid black;
+        }
+        .crd2{
+            background: rgba(140, 177, 255, 0.6);
+          padding: 10px;
+        }
+        .sticky{
+            position:;
+        }
+        .toggle-container {
+    position: relative;
+}
+
+.toggle-label {
+    display: block;
+    width: 50px;
+    height: 30px;
+    background-color: #ccc;
+    border-radius: 15px;
+    position: relative;
+    cursor: pointer;
+}
+
+.toggle-label::after {
+    content: '';
+    width: 24px;
+    height: 24px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    transition: transform 0.3s;
+}
+
+input[type="checkbox"] {
+    visibility: hidden;
+}
+
+input[type="checkbox"]:checked + .toggle-label::after {
+    transform: translateX(20px);
+}
+    </style>
+</head>
+<body>
+   <div class="container">
+    
+
+   
+    <div class="flex">
+      <a href="./Goals.html"><img src="./content/chevron-left.png" alt=""></a> <h2>Workout Tracker</h2><div></div>
+    </div>
+    <br>
+    <div class="flex">
+        <div></div>
+        <div></div>
+        <div>Good job</div>
+        <div>less then 320cal</div>
+    </div>
+
+    <div class="image"><img src="./content/Chart Full.png" alt=""></div>
+    <div class="warn flex">
+        <i class="fa-solid fa-triangle-exclamation"></i>
+        <div>You've burned fewer calories than yesterday. Time to get moving! </div>
+    </div>
+    <br>
+    <div class="flex">
+        <p>Upcoming Workout</p>
+        <a href="">see more</a>
+    </div>
+    <br>
+    <div class="crd flex">
+        <div class="image"><img src="./content/1circle.png" alt=""></div>
+        <div class="txt">
+            <p>Full Body Workout</p>
+            <a href="">Today 3pm</a>
+        </div>
+        <div class="toggle-container">
+            <input type="checkbox" id="toggle">
+            <label for="toggle" class="toggle-label"></label>
+        </div>
+    </div>
+    <div class="crd flex">
+        <div class="image"><img src="./content/2circle.png" alt=""></div>
+        <div class="txt">
+            <p>Full Body Workout</p>
+            <a href="">Today 3pm</a>
+        </div>
+        <div class="toggle-container">
+            <input type="checkbox" id="toggle">
+            <label for="toggle" class="toggle-label"></label>
+        </div>
+    </div>
+    <h2>What do you want to Train</h2>
+    <br>
+    <div class="crd2 flex">
+        <div>
+            <p>Full body workout</p>
+            <p>arms</p>
+            <p>chest</p>
+        </div>
+        <div class="image">
+<img src="./content/3circle.png" alt="">
+        </div>
+    </div>
+  
+ 
+  
+
+   
+    <ul class="menus">
+        <div class="slider"></div>
+
+        <li>
+            <a href="#">
+                <i class="fas fa-home"></i>
+                <span>Profile</span>
+            </a>
+        </li>
+        <li><a href="#"><i class="fa-solid fa-chart-line"></i><span>Search</span></a></li>
+        <li><a href="#" class="active-icon"><i class="fas fa-search"></i><span>search</span></a></li>
+        <li><a href="#"><i class="fa-solid fa-camera"></i><span>Profile</span></a></li>
+        <li><a href="#"><i class="far fa-user"></i><span>Profile</span></a></li>
+                       
+    </ul>
+ 
+</div>
+</body>
+</html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+    $(document).ready(function(){
+        $(".menus li a").click(function(){
+            var position= $(this).position();
+            var margin=12;
+            $(".slider").css({"left":+position.left+margin, "transform":"translateX(0)"});
+            $(".menus li a").removeClass("active-icon");
+            $(this).addClass("active-icon")
+        })
+    })
+</script>

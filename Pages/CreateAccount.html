@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create an Account</title>
+    <link rel="stylesheet" href="./Css/common.css">
+    <style>
+      
+
+        h2 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        button
+         {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        input[type="checkbox"]{
+            font-size: xx-small;
+        }
+        button[type="submit"] {
+            background-color: #4a90e2;
+            color: #ffffff;
+            cursor: pointer;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #357ae8;
+        }
+        p.text-center {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        p.text-center a {
+            color: #4a90e2;
+            text-decoration: none;
+        }
+
+        p.text-center a:hover {
+            text-decoration: underline;
+        }
+        .lines {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px 0;
+}
+
+.lines img {
+    width: 45%;
+    max-width: 200px; /* Adjust as needed */
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.social-buttons button {
+    width: 50px;
+    height: 50px;
+    margin: 0 5px;
+    border: 1px solid black;
+    background-color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.social-buttons button:hover {
+    background-color: #f3f3f3;
+}
+button[type="submit"] {
+    background: linear-gradient(270deg, #7B91FF 0%, #95BEFF 100%);
+    color: #ffffff;
+    cursor: pointer;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Create an account</h2>
+        <form action="#" method="POST">
+            <input type="text" name="first_name" placeholder="First Name">
+            <input type="text" name="last_name" placeholder="Last Name">
+            <input type="email" name="email" placeholder="Email">
+            <input type="password" name="password" placeholder="Password">
+            <label for="agree">
+                <input type="checkbox" id="agree" name="agree">
+                By proceeding, I agree to all T&C and Privacy Policy
+            </label>
+            <button type="submit">Create an account</button>
+        </form>
+        <div class="lines">
+            <img src="./content/Line 1.png" alt="">
+            <p class="text-center">or</p>
+            <img src="./content/Line 1.png" alt="">
+        </div>
+        
+        <div class="social-buttons">
+            <button>
+                <img src="./content/google.png" alt="Google">
+            </button>
+            <button>
+                <img src="./content/fb.png" alt="Facebook">
+            </button>
+        </div>
+        <p class="text-center">Already have an account? <a href="./Login.html">Login</a></p>
+    </div>
+</body>
+</html>
