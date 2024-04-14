@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Mobile Web App</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./Pages/Css/common.css">
+</head>
+<body class="bg-gray-100 h-screen flex flex-col justify-between">
+<!-- Container for mobile view -->
+<div class="container h-screen">
+    <!-- Skip Button -->
+    <a href="./Pages/CreateAccount.html" class="absolute top-4 right-4 px-4 py-2 text-blue-400 hover:text-blue-500 hover:underline">Skip</a>
+
+    
+
+        <!-- Content Section -->
+        <div class="max-w-screen-sm mx-auto px-4 py-4">
+
+            <div class="flex flex-col justify-center items-center py-8">
+                <!-- Image -->
+                <img src="./Pages/content/1.png" alt="Image" class="w-48 h-48 object-cover">
+
+                <!-- Heading -->
+                <h2 class="text-3xl mt-4">Track Your Goal</h2>
+
+                <!-- Paragraph -->
+                <p class="text-lg mt-4 px-8">Don’t worry if you have trouble determining your goals, We can help you determine your goals and track your goals</p>
+            </div>
+
+            <!-- Next Button -->
+            <button id="nextButton" class="absolute bottom-8 right-4 text-white rounded-full w-12 h-12 flex items-center justify-center border border-solid border-blue-400 bg-gradient-to-r from-white to-blue-200">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                </svg>
+            </button>
+        </div>
+
+    </div>
+
+    <!-- JavaScript for functionality -->
+    <script>
+       
+    // Add event listener for the next button
+    document.getElementById('nextButton').addEventListener('click', function() {
+        // Navigate to the new page
+        window.location.href = './pages/2nd.html';
+    });
+
+
+    </script>
+</body>
+</html>
